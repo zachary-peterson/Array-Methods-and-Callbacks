@@ -12,6 +12,16 @@ console.log('its working');
 (d) Away Team goals for 2014 world cup final
 (e) Winner of 2014 world cup final */
 
+let matchID = [];
+
+const findTheIndex = (data) => data.filter(function(item){
+    if(item.Stage === "Final" && item.Year === 2014){
+        return matchID.push(item);
+    };
+});
+
+console.log(findTheIndex(fifaData));
+
 console.log(fifaData[828]['Home Team Name']);
 console.log(fifaData[828]['Away Team Name']);
 console.log(fifaData[828]['Home Team Goals']);
